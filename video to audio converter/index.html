@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="../3.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <title>Video to Audio Converter</title>
+</head>
+<body>
+    <br>
+    <p class="name">Bo Deeb</p>
+    <div class="container">
+        <h1 style="color: #4caf50;">Video to Audio Converter</h1>
+        <input type="file" id="videoInput" accept="video/*">
+        <button onclick="convertToAudio()">Convert</button>
+        <button onclick="resetConverter()">Reset</button>
+        <audio controls id="audioOutput"></audio>
+        <a id="downloadLink" style="display: none;" download="converted_audio.mp3">
+            <button onclick="downloadAudio()" style="background-color: #3498db;">Download Audio</button>
+        </a>
+    </div>
+    <footer>
+        <p id="poweredBy">Powered by Hassan Deeb</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
